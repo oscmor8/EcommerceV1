@@ -59,7 +59,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-h2:after {
+h2::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -76,19 +76,19 @@ h2:after {
   padding: 0.5rem 1rem;
   outline: none;
   border: 2px solid black;
-  background-color: rgba(230, 230, 230, 0.6);
+  background-color: lightgray;
   font-size: 1.1rem;
   margin-bottom: 22px;
   transition: 0.3s;
 }
 
 .field:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: black;
 }
 
 .field:focus {
   background-color: #fff;
-  border: 2px solid rgba(30, 85, 250, 0.47);
+  border: 2px solid blue;
 }
 
 .area {
