@@ -22,8 +22,7 @@ http.onload = function(){
       document.querySelector(".products").innerHTML = output;
    }
 }
-
-
+//
 let map;
 
 function initMap(){
@@ -120,4 +119,5 @@ function initMap(){
     })
 }
 
+//test
 //test

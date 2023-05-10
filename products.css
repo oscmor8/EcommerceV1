@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -36,7 +38,9 @@
   font-size: 4.5rem;
   font-weight: 400;
 }
+
 /* ========================== Inventory Slides ==================== */
+
 .product {
   box-shadow: 0 5px 5px;
 }
@@ -46,6 +50,10 @@
   height: 25vh;
   display: block;
   object-fit: cover;
+}
+
+.title {
+  text-align: center;
 }
 
 .products .title {
@@ -60,9 +68,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   padding-left: 1rem;
-}
-.title {
-  text-align: center;
 }
 
 .btn {
