@@ -8,7 +8,7 @@ function navSlide(){
     }
     burger.addEventListener("click", showNavBar);
 }
-
+//testing
 navSlide()
 
 
