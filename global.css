@@ -1,0 +1,161 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: rgba(0,0,0,0.8);
+}
+.logo{
+    color: white;
+}
+
+
+
+.nav-links li{
+list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+/* .burger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu div{
+   width: 25px; 
+   height: 3px;
+   background-color: white;
+   margin: 5px;
+} */
+
+
+/* ================ footer=============== */
+.footer{
+    background:black;
+    padding: 70px 0;
+
+}
+.footer-container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.footer-column{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-column h4{
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a, .footer-column ul li{
+    font-size: 16px;
+    text-decoration: none;
+    color: gray;
+    display: block;
+    transition: all .3s ease;
+    margin-bottom: 1rem;
+}
+
+.footer-column ul li a:hover{
+    color: green;
+    padding-left: 6px ;
+}
+
+.footer-column .social-links a{
+   display: inline-block;
+   height: 1rem;
+   width: 2rem;
+  
+   color: white;
+}
+
+.footer-column input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+
+
+
+
+@media (max-width:768px){
+     /* body{
+        overflow-x: hidden;
+    } 
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         width: 30%; 
+        transform: translateX(100%);
+        transition: transform 0.5 ease-in;
+        background-color: rgba(0,0,0,0.8) ;
+        z-index: 3;
+    }
+    .navlinks li{
+        opacity: 0;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+
+    .nav-activate{
+        transform: translateX(0%);
+    }  */
+
+    .footer-column{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:412px){
+    .row{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    .footer .footer-column ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
