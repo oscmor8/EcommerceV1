@@ -106,3 +106,10 @@
 .btn1:hover::before {
   transform: scaleX(1);
 }
+
+@media (max-width: 412px){
+.content h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+}
