@@ -1,14 +1,3 @@
-// function navSlide() {
-//   const burger = document.querySelector(".burger-menu");
-//   const nav = document.querySelector(".nav-links");
-
-//   function showNavBar() {
-//     nav.classList.toggle("nav-activate");
-//   }
-//   burger.addEventListener("click", showNavBar);
-// }
-
-// navSlide();
 
 const slider = document.querySelector(".slider");
 

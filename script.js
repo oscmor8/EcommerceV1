@@ -1,4 +1,6 @@
 // Start with an ajax request to fetch our data
+
+//cretae a XMLHttp request which is used to exchange data with a server 
 const http = new XMLHttpRequest();
 // the variable http holds all methods and properties
 
@@ -7,7 +9,7 @@ http.open("get", "products.json", true);
 // the second argument we pass the file where the data lives in this case its our json file
 http.send();
 
-http.onload = function () {
+http.onload = function () { // on load means this function will load whne the webpage is loaded
   if (this.readyState == 4 && this.status == 200) {
     const products = JSON.parse(this.responseText);
     let output = ""; // empty variable to add the incoming data
@@ -31,10 +33,10 @@ http.onload = function () {
   }
 };
 // ====================== Map API ====================
-let map;
+let map; // map is null 
 
-function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
+function initMap() { // creates a function that inizializes a google map 
+  map = new google.maps.Map(document.getElementById ("map"), { //
     center: { lat: 35.158003151155704, lng: -80.88697729260173 },
     zoom: 13,
     styles: [
