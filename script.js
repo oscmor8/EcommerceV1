@@ -11,6 +11,7 @@ http.send();
 
 http.onload = function () { // on load means this function will load whne the webpage is loaded
   if (this.readyState == 4 && this.status == 200) {
+    //ready state = 4 completed the request and received the full response from the server.
     const products = JSON.parse(this.responseText);
     let output = ""; // empty variable to add the incoming data
     // Make an html template to the incoming data
@@ -33,7 +34,7 @@ http.onload = function () { // on load means this function will load whne the we
   }
 };
 // ====================== Map API ====================
-let map; // map is null 
+let map; 
 
 function initMap() { // creates a function that inizializes a google map 
   map = new google.maps.Map(document.getElementById ("map"), { //

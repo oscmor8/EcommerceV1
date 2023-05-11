@@ -10,6 +10,7 @@
 body {
   width: 100%;
   height: 100vh;
+  background: url("pics/contactbackground.webp") center;
 }
 
 .container {
@@ -22,17 +23,17 @@ body {
   padding: 20px 100px;
 }
 
-.container::after {
+/* .container::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: url("pics/contactbackground.webp") no-repeat center;
+  background: url("pics/contactbackground.webp") center;
   background-size: cover;
   z-index: -1;
-}
+} */
 
 .contact-box {
   max-width: 850px;
@@ -42,6 +43,8 @@ body {
   align-items: center;
   text-align: center;
   background-color: white;
+  border: black solid 2px;
+
 }
 
 .left {

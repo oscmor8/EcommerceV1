@@ -1,7 +1,7 @@
 
 const slider = document.querySelector(".slider");
 
-var sectionIndex = 0; // set to 0 to start the slider on image 1
+var sectionIndex =0; // set to 0 to start the slider on image 1
 
 function updateSliderPosition() {
   const newPosition = sectionIndex * -25;
