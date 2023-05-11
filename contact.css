@@ -63,7 +63,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-h2::after {
+/* h2::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -73,7 +73,7 @@ h2::after {
   width: 50px;
   border-radius: 2px;
   background-color: azure;
-}
+} */
 
 .field {
   width: 100%;
@@ -86,14 +86,14 @@ h2::after {
   transition: 0.3s;
 }
 
-.field:hover {
+/* .field:hover {
   background-color: black;
 }
 
 .field:focus {
   background-color: #fff;
   border: 2px solid blue;
-}
+} */
 
 .area {
   min-height: 150px;
