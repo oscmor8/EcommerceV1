@@ -1,10 +1,17 @@
+// Start with an ajax request to fetch our data
 const http = new XMLHttpRequest();
+// the variable http holds all methods and properties
+
+// prepare the request with an open method
 http.open("get", "products.json", true);
+// the second argument we pass the file where the data lives in this case its our json file
 http.send();
+
 http.onload = function () {
   if (this.readyState == 4 && this.status == 200) {
     const products = JSON.parse(this.responseText);
-    let output = "";
+    let output = ""; // empty variable to add the incoming data
+    // Make an html template to the incoming data
     for (let item of products) {
       output += `
             <div class="product">
@@ -19,10 +26,11 @@ http.onload = function () {
             </div>
          `;
     }
+    // last step is to target the products container and add the data to the empty div
     document.querySelector(".products").innerHTML = output;
   }
 };
-//
+// ====================== Map API ====================
 let map;
 
 function initMap() {
